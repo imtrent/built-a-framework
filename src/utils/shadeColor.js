@@ -8,14 +8,14 @@ export function shadeColor(color, amount) {
 
 export function shadePalette(hex) {
 	return [
+		shadeColor(hex, -100),
+		shadeColor(hex, -75),
 		shadeColor(hex, -50),
-		shadeColor(hex, -40),
-		shadeColor(hex, -30),
-		shadeColor(hex, -15),
+		shadeColor(hex, -25),
 		hex,
-		shadeColor(hex, 15),
-		shadeColor(hex, 30),
-		shadeColor(hex, 40),
-		shadeColor(hex, 50)
+		shadeColor(hex, 25),
+		shadeColor(hex, 50),
+		shadeColor(hex, 75),
+		shadeColor(hex, 100)
 	];
 }
